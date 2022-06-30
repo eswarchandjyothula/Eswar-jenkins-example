@@ -11,9 +11,7 @@ pipeline {
                     sh "mvn clean"
                 }
             }
-
-
-        stage ('---test---') {
+             stage ('---test---') {
 
             tools {
                     maven 'maven 3.8.3'
@@ -22,10 +20,7 @@ pipeline {
                     sh 'mvn test'
                 }
             }
- 
-
-
-        stage ('---package---') {
+             stage ('---package---') {
             steps {
                 
                     sh 'mvn package'
